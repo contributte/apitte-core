@@ -63,7 +63,7 @@ class GroupPathValidation implements IValidation
 				if ($match !== null) {
 					throw new InvalidSchemaException(
 						sprintf(
-							'@Path "%s" in "%s" contains illegal characters "%s". Allowed characters are only [a-zA-Z0-9-_/].',
+							'@Path "%s" in "%s" contains illegal characters "%s". Allowed characters are only [a-zA-Z0-9-_/{}].',
 							$path,
 							$controller->getClass(),
 							$match[1]
@@ -85,19 +85,16 @@ class GroupPathValidation implements IValidation
 						if ($match !== null) {
 							throw (new InvalidSchemaException(
 								sprintf(
-									'@Path "%s" in "%s::%s()" contains illegal characters "%s" in parameter. Allowed characters in parameter are only {[a-z-A-Z0-9-_]+}',
+									'@Path "%s" in "%s" contains illegal characters "%s" in parameter. Allowed characters in parameter are only {[a-z-A-Z0-9-_]+}',
 									$path,
 									$controller->getClass(),
-									$method->getName(),
 									$match[1]
 								)
 							))
-								->withController($controller)
-								->withMethod($method);
+								->withController($controller);
 						}
 					}
 				}
-
 			}
 		}
 	}
