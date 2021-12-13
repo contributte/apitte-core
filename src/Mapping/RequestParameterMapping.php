@@ -225,6 +225,7 @@ class RequestParameterMapping
 
 		// Initialize mapper
 		if (!is_object($mapper)) {
+			/** @phpstan-var ITypeMapper $mapper */
 			$this->types[$type] = $mapper = new $mapper();
 		}
 

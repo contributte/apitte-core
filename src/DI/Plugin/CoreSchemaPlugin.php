@@ -13,6 +13,7 @@ use Apitte\Core\Schema\Validation\ControllerValidation;
 use Apitte\Core\Schema\Validation\FullpathValidation;
 use Apitte\Core\Schema\Validation\GroupPathValidation;
 use Apitte\Core\Schema\Validation\IdValidation;
+use Apitte\Core\Schema\Validation\IValidation;
 use Apitte\Core\Schema\Validation\NegotiationValidation;
 use Apitte\Core\Schema\Validation\PathValidation;
 use Apitte\Core\Schema\Validation\RequestBodyValidation;
@@ -147,6 +148,7 @@ class CoreSchemaPlugin extends Plugin
 
 		// Add all validators at compile-time
 		foreach ($validations as $validation) {
+			/** @phpstan-var IValidation $validation */
 			$validator->add(new $validation());
 		}
 

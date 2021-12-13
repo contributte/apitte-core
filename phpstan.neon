@@ -16,12 +16,12 @@ parameters:
 		- '#^Variable property access on Apitte\\Core\\Mapping\\Request\\BasicEntity\.$#'
 
 		# There is no apitte/negotiation dependency
-		- '#^Return typehint of method Apitte\\Core\\Http\\ApiResponse::getEntity\(\) has invalid type Apitte\\Negotiation\\Http\\AbstractEntity\.$#'
-		- '#^Parameter \$entity of method Apitte\\Core\\Http\\ApiResponse::withEntity\(\) has invalid typehint type Apitte\\Negotiation\\Http\\AbstractEntity\.$#'
+		- '#^Method Apitte\\Core\\Http\\ApiResponse::getEntity\(\) has invalid return type Apitte\\Negotiation\\Http\\AbstractEntity.$#'
+		- '#^Parameter \$entity of method Apitte\\Core\\Http\\ApiResponse::withEntity\(\) has invalid type Apitte\\Negotiation\\Http\\AbstractEntity\.$#'
 		- '#^Call to static method from\(\) on an unknown class Apitte\\Negotiation\\Http\\#'
 
 		# Phpstan bug
-		- '#^Parameter \#1 (.*?) of function call_user_func expects callable\(\)\: mixed, array\(Apitte\\Core\\UI\\Controller\\IController, string\) given\.$#'
+		- '#^Parameter \#1 \$callback of function call_user_func expects callable\(\): mixed, array{Apitte\\Core\\UI\\Controller\\IController, string} given.$#'
 		- message: '#^Parameter \#1 \$argument of class ReflectionClass constructor expects class-string<T of object>|T of object, string given\.$#'
 		  path: %currentWorkingDirectory%/src/DI/Loader/DoctrineAnnotationLoader.php
 
