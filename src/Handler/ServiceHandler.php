@@ -60,6 +60,7 @@ class ServiceHandler implements IHandler
 	protected function getService(Endpoint $endpoint): IController
 	{
 		$class = $endpoint->getHandler()->getClass();
+		assert(class_exists($class));
 		$service = $this->container->getByType($class);
 
 		if (!($service instanceof IController)) {
