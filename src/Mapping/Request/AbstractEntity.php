@@ -14,10 +14,7 @@ abstract class AbstractEntity implements IRequestEntity, IteratorAggregate
 	 */
 	abstract public function toArray(): array;
 
-	/**
-	 * @return ArrayIterator|Traversable|mixed[]
-	 */
-	public function getIterator(): iterable
+	public function getIterator(): Traversable
 	{
 		return new ArrayIterator($this->toArray());
 	}
