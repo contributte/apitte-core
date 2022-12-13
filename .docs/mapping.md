@@ -163,7 +163,7 @@ api:
 
 #### SymfonyValidator
 
-Requires a doctrine annotation reader, you may use [nettrine/annotations](https://github.com/nettrine/annotations)
+Requires a doctrine annotation reader, you may use [nettrine/annotations](https://github.com/contributte/doctrine-annotations)
 
 Also install [symfony/validator](https://symfony.com/doc/master/validation.html)
 
