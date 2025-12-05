@@ -1,22 +1,25 @@
-![](https://heatbadger.now.sh/github/readme/contributte/apitte-core/)
+![](https://heatbadger.now.sh/github/readme/contributte/apitte-core/?deprecated=1)
 
 <p align=center>
-  <a href="https://github.com/apitte/core/actions"><img src="https://badgen.net/github/checks/apitte/core/master?cache=300"></a>
-  <a href="https://coveralls.io/r/apitte/core"> <img src="https://badgen.net/coveralls/c/github/apitte/core?cache=300"> </a>
-  <a href="https://packagist.org/packages/apitte/core"> <img src="https://badgen.net/packagist/dm/apitte/core"> </a>
-  <a href="https://packagist.org/packages/apitte/core"> <img src="https://badgen.net/packagist/v/apitte/core"> </a>
+    <a href="https://bit.ly/ctteg"><img src="https://badgen.net/badge/support/gitter/cyan"></a>
+    <a href="https://bit.ly/cttfo"><img src="https://badgen.net/badge/support/forum/yellow"></a>
+    <a href="https://contributte.org/partners.html"><img src="https://badgen.net/badge/sponsor/donations/F96854"></a>
 </p>
-<p align=center>
-  <a href="https://packagist.org/packages/apitte/core"><img src="https://badgen.net/packagist/php/apitte/core"></a>
-  <a href="https://github.com/contributte/apitte-core"><img src="https://badgen.net/github/license/contributte/apitte-core"></a>
-  <a href="https://bit.ly/ctteg"><img src="https://badgen.net/badge/support/gitter/cyan"></a>
-  <a href="https://bit.ly/cttfo"><img src="https://badgen.net/badge/support/forum/yellow"></a>
-  <a href="https://contributte.org/partners.html"><img src="https://badgen.net/badge/become/a%20patron/F96854"></a>
-<p>
 
 <p align=center>
-Website 🚀 <a href="https://contributte.org">contributte.org</a> | Contact 👨🏻‍💻 <a href="https://f3l1x.io">f3l1x.io</a> | Twitter 🐦 <a href="https://twitter.com/contributte">@contributte</a>
+    Website 🚀 <a href="https://contributte.org">contributte.org</a> | Contact 👨🏻‍💻 <a href="https://f3l1x.io">f3l1x.io</a> | Twitter 🐦 <a href="https://twitter.com/contributte">@contributte</a>
 </p>
+
+## Disclaimer
+
+| :warning: | This project is no longer being maintained. Please use [contributte/apitte](https://github.com/contributte/apitte).|
+|---|---|
+
+| Composer | [`apitte/core`](https://packagist.org/apitte/core) |
+|---| --- |
+| Version | ![](https://badgen.net/packagist/v/apitte/core) |
+| PHP | ![](https://badgen.net/packagist/php/apitte/core) |
+| License | ![](https://badgen.net/github/license/contributte/apitte-core) |
 
 ## Usage
 
@@ -28,7 +31,7 @@ composer require apitte/core
 
 ## Documentation
 
-For details on how to use this package, check out our [documentation](.docs).
+For details on how to use this package, check out the [contributte/apitte](https://github.com/contributte/apitte) repository.
 
 ## Version
 
@@ -39,9 +42,7 @@ For details on how to use this package, check out our [documentation](.docs).
 
 ## Development
 
-See [how to contribute](https://contributte.org/contributing.html) to this package.
-
-This package is currently maintaining by these authors.
+This package was maintained by these authors.
 
 <a href="https://github.com/f3l1x">
   <img width="80" height="80" src="https://avatars2.githubusercontent.com/u/538058?v=3&s=80">
